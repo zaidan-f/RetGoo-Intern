@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* CSS Variables */
+:root {
+  --normal-font: 400;
+  --bold-font: 600;
+  --bolder-font: 900;
+  --primary-color: #000000;
+  --secondary-color: #ea2027;
+  --line-height: 1.7rem;
+  --transition: 0.2s ease-in;
+}
+
+/* Smooth scroll effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+body {
+  font-family: "Roboto", sans-serf;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+} 
+
+.fist {
+    color: var(--secondary-color);
+}
+  
+.title {
+    color: var(--primary-color);
+}
+  
+.test {
+    color: white;
+}
+
+nav {
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 3px 2px #f1f1f1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 7.5rem ;
+}
+
+
+.intro-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+  
+.intro-text h3 {
+    margin-bottom: 0.5rem;
+}
+  
+.hero p {
+    line-height: var(--line-height);
+}
+  
+.Welcome {
+    color: var(--primary-color);
+}
+  
+.Site {
+    color: var(--secondary-color);
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 0.6rem;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    color: #fff;
+    font-family: "Roboto", sans-serf;
+
+}
+  
+.red {
+    background-color: var(--secondary-color);
+    margin-right: 1.5rem;
+}
+  
+.red:hover {
+    background-color: #5e1518;
+    color: #fff;
+}
+
+iframe {
+    max-width: 30rem;
+    border-top: 20px groove var(--secondary-color);
+    border-bottom: 20px groove var(--secondary-color);
+    border-right: 18px groove var(--secondary-color);
+    border-left: 18px groove var(--secondary-color);
+}
+
+.about {
+    position: relative;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/3/3d/LaravelLogo.png');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.about h3 {
+    font-size: 2em;
+    margin-bottom: -20px;
+}
+  
+.about p {
+    font-size: 1em;
+}
+  
+  
+.about p {
+    font-size: 1rem;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked + .label .switcher {
+    transform: translateX(24px);
+}
+
+.label {
+    width: 50px;
+    height: 29px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 6px;
+    position: relative;
+}
+
+.switcher {
+    background-color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.moon {
+    color: #ff0202;
+}
+  
+.sun {
+    color: #ffffff;
+}
+
+body.dark {
+    background-color: #1e272e;
+}
+  
+body.dark .bar {
+    background-color: #fff;
+}
+  
+body.dark p {
+    color: #fff;
+}
+  
+body.dark h3 {
+    color: #fff;
+}
+  
+body.dark nav {
+    background-color: var(--secondary-color);
+    box-shadow: 2px 3px 2px #696969;
+}
+
+body.dark .Welcome{
+    color: white;
+}
+
+
+footer{
+    background: url('matrix.gif');
+    background-attachment: fixed;
+    text-align: center;
+    color:#f1f1f1
+}
