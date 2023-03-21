@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Open-sans', sans-serif;
+        background-color: #212121;
+    }
+
+    .form {
+         margin: 30px auto;
+        width: 900px;
+        padding: 10px;
+    }
+
+    .form-content  h1 {
+        text-align: center;
+        color: #f1f1f1;
+    }
+    .form-content p {
+        text-align: center;
+        color: #f1f1f1;
+    }
+
+    .title h3 {
+    	font-size: 1.4em;
+        color: #f1f1f1;
+        position: relative;
+      
+    }
+    .title h3::before{
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        left: 0;
+        bottom: -8px;
+        background: #00bfff;
+    } 
+    .title .d{
+        font-size: 14px;
+        text-align: left;
+    }
+    .title p {
+        color: white;
+        font-size: 13px;
+        text-align: left;
+    }
+    .tulis p {
+        color: white;
+    }
+    .tulis .d{
+        font-size: 14px;
+        color: white;
+        text-align: left;
+    }
+    .title label {
+        font-size:1.1em;
+        font-weight: 400;
+        color: #f1f1f1;
+       position: relative;
+    }
+    .tulis label {
+        font-size:1.1em;
+        font-weight: 400;
+        color: #f1f1f1;
+       position: relative;
+    }
+    .title label::before{
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 45px;
+        left: 0;
+        bottom: -5px;
+        background: #256d85;
+    }
+    .content {
+        color: #f1f1f1;
+        margin-bottom: 10px;
+    }
+
+    .content input[type=text] {
+        background: transparent;
+        width: 100%;
+        border: none;
+        height: 40px;
+        border-bottom: 0.5px solid #bfbfbf;
+        font-size: 14px;
+        color: white;
+        margin-bottom: 6px;
+        outline: none;
+    }
+
+    .content input[type=date] {
+        background: transparent;
+        width: 100%;
+        border: none;
+        height: 40px;
+        border-bottom: 1px solid #bfbfbf;
+        color: rgb(107, 107, 107);
+        margin-bottom: 10px;
+        margin-top: -9px;
+        outline: none;
+    }
+
+    .content label {
+        font-size: 1em;
+        font-weight: 400;
+        position: relative;
+    }
+    .content label::before{
+        content: "";
+        position: absolute;
+        height: 2px;
+        width:60px;
+        left: 0;
+        bottom: -5px;
+        background: #256d85;
+    }
+    .btnkirim {
+        background-color: #00bfff;
+        border: none;
+        width: 20%;
+        height: 100px;
+        margin-top: 1em;
+    }
+    .btnkirim {
+        border: 2px ;
+        border-color: #f1f1f1;
+        background-color: #00bfff;
+        float: right;
+        width: 20%;
+        color: rgb(0, 0, 0);
+        height: 50px;
+        margin-top: 1em;
+        cursor: pointer;
+        transition: .3s;
+        margin-bottom: 50px;
+    }
+    .btnkirim:hover {
+        background: transparent;
+        border: 1px solid #00bfff;
+        color: #f1f1f1;
+    }
+    
+    input[type='file'] {
+        cursor: pointer !important;
+        color: #fff;
+    }
+    
+    input[type='file']::-webkit-file-upload-button {
+        background: transparent;
+        border: 1px solid #fff;
+        padding: 1em 2em;
+        cursor: pointer;
+        color: #fff;
+        transition: .3s;
+    }
+    
+    
+    input[type='file']::-webkit-file-upload-button:hover {
+        background: #00bfff;
+        border: 1px solid #00bfff;
+        padding: 1em 2em;
+        cursor: pointer;
+        color: #fff;
+    }
+
+.radio {
+	width: 400px;
+	color: #f1f1f1;
+}
+
+.pilihan {
+	width: 400px;
+	color: #f1f1f1;
+}
+.pilihan .b{
+    margin-left: 47.4px;
+}
+.pilihan .u{
+    margin-left: 50.9px;
+}
+.display {
+	display: flex;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.cbp {
+	margin-left: 50px;
+}
+
+.cbl {
+	margin-left: 50px;
+}
+.disla{
+    font-size: 14px;
+}
+.content .tkj{
+    margin-left: 20%; 
+ }
+.content .s{
+   margin-left: 36.5%; 
+}
+.content .dkv{
+    margin-left: 26.4%; 
+ }
+ .content .i{
+    margin-left: 37.2%; 
+ }
+ .label{
+    color:white ;
+    position: relative;
+    font-size: 14px;
+}
+.label::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 55px;
+    left: 0;
+    bottom: -5px;
+    background: #256d85;
+}
+.pilihan label{
+    color: white ;
+    position: relative;
+    font-size: 14px;
+}
+.pilihan label::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -5px;
+    background: #256d85;
+}
+.tulis label{
+    color: white ;
+    position: relative;
+}
+.tulis label::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    left: 0;
+    bottom: -5px;
+    background: #256d85;
+}

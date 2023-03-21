@@ -33,13 +33,17 @@ ul li {
 }
 
 a {
+  font-size: 1rem;  
   text-decoration: none;
-  color: var(--primary-color);
+  color:white;
+  margin-left: -97%;
+  margin-top: 0%;
 }
 
 a:hover {
-  color: var(--secondary-color);
-} 
+  color: black;
+}
+
 
 .fist {
     color: var(--secondary-color);
@@ -54,7 +58,9 @@ a:hover {
 }
 
 nav {
-    background: var(--secondary-color);
+    background: url(https://i.postimg.cc/k4bQN2Zd/bgdesign.png);
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,25 +70,44 @@ nav {
     top: 0;
     left: 0;
     z-index: 1;
+    height: 60px;
 }
 
+
 .hero {
+  background:url(https://i.postimg.cc/k4bQN2Zd/bgdesign.png) ; 
+  background-size: cover;
+  background-attachment: fixed; 
+  border-radius: 20px;
+  padding-left: 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
-  max-width: 1100px;
-  margin: 7.5rem ;
+  gap: 10rem;
+  height: 480px;
+  max-width: 11000px;
+  margin-top: 5rem ;
+  margin-left: 3rem;
+  margin-right: 5rem;
+  margin-bottom: 10rem;
 }
 
+.imagepc {
+    position: absolute;
+    margin-left: 50%;
+    margin-bottom: 7rem;
+}
 
 .intro-text h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
 }
   
-.intro-text h3 {
+.intro-text p {
+    font-size: 125%;
     margin-bottom: 0.5rem;
+    color: #fff;
 }
   
 .hero p {
@@ -104,55 +129,20 @@ nav {
     border: none;
     font-size: 1.4rem;
     border-radius: 5px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-family: "Roboto", sans-serf;
-
+    border: 1px solid black;
 }
   
 .red {
-    background-color: var(--secondary-color);
+    background-color:white;
     margin-right: 1.5rem;
+    border: 1px solid black;
 }
   
 .red:hover {
     background-color: #5e1518;
     color: #fff;
-}
-
-iframe {
-    max-width: 30rem;
-    border-top: 20px groove var(--secondary-color);
-    border-bottom: 20px groove var(--secondary-color);
-    border-right: 18px groove var(--secondary-color);
-    border-left: 18px groove var(--secondary-color);
-}
-
-.about {
-    position: relative;
-    background: url('https://upload.wikimedia.org/wikipedia/commons/3/3d/LaravelLogo.png');
-    background-attachment: fixed;
-    background-size: cover;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin: 3rem 0;
-}
-
-.about h3 {
-    font-size: 2em;
-    margin-bottom: -20px;
-}
-  
-.about p {
-    font-size: 1em;
-}
-  
-  
-.about p {
-    font-size: 1rem;
 }
 
 .checkbox {
@@ -195,34 +185,45 @@ iframe {
 }
 
 body.dark {
-    background-color: #1e272e;
+    background-color: #161616;
 }
   
 body.dark .bar {
     background-color: #fff;
 }
-  
-body.dark p {
-    color: #fff;
+
+body.dark .red {
+    background-color: black;
+    border: 1px solid white;
+}
+
+body.dark .red:hover{
+    background-color: #5e1518;
+}
+
+body.dark .btn{
+    color: white;
+    border: 1px solid white;
 }
   
+body.dark p {
+    color: rgb(0, 0, 0);
+}
+  
+body.dark h1 {
+    color: rgb(0, 0, 0);
+}
+
 body.dark h3 {
-    color: #fff;
+    color: #161616;
 }
   
 body.dark nav {
-    background-color: var(--secondary-color);
     box-shadow: 2px 3px 2px #696969;
 }
 
-body.dark .Welcome{
-    color: white;
-}
-
-
 footer{
-    background: url('matrix.gif');
-    background-attachment: fixed;
+    background: url(https://i.postimg.cc/k4bQN2Zd/bgdesign.png) ;
     text-align: center;
-    color:#f1f1f1
+    color:#ffffff;
 }
