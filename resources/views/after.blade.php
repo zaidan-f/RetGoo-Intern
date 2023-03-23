@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Internship-System</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
 
     <!-- Web page CSS -->
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -37,19 +40,18 @@
     
     <!-- Hero section -->
     <section class="hero">
+        <img class="jempol" src="https://i.postimg.cc/c6q9h7g1/Group-578.png" alt="">
+        <img class="imgrtg" src="https://i.postimg.cc/3xsW3kMM/Group-577.png" alt="">
         <div class="intro-text">
           <h1>
-            <span class="data">Data Peserta Prakerin RetGoo</span>
+            <span class="data">Terimakasih telah mengisi form Data Peserta Prakerin di PT. RetGoo Sentris Informa</span>
           </h1>
-          <p>
-            <span class="data2">Data Peserta yang Akan Melaksanakan Prakerin <br> di PT. RetGoo Sentris Informa</span>
-          </p>
           <form action="/form">
             @csrf
-          <Button class="btn red" >Enter Form </Button>
+          <Button class="btn red" >Lihat Jawaban </Button>
+          <Button class="btn red" formaction="/landing" >Kembali</Button></form>
         </div>
-        <div class="imagepc">
-          <img src="pc.png" alt="" width="90%">
+        <img class="clap" src="https://i.postimg.cc/43Frt95y/Group-579.png" alt="">
     </section>
 
     <!-- Footer -->
@@ -62,7 +64,6 @@
             Designed by Zaidan</a>
           </div>
         </div>
-    </footer>
 
 
         <!-- Web page script -->
