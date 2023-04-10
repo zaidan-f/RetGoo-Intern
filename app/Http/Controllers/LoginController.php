@@ -10,7 +10,7 @@ class LoginController extends Controller
     public function index()
     {
         if (Auth::check()) {
-            return redirect('home');
+            return redirect('/landing');
         }else{
             return view('login');
         }
@@ -25,7 +25,7 @@ class LoginController extends Controller
  
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('home');
+            return redirect()->intended('/landing');
         }
  
         return back()->with('loginError', 'Login failed');
