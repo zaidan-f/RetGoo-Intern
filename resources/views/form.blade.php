@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Internship-System</title>
+    <title>Form Internship-System</title>
     <link rel="stylesheet" type="text/css" href="/css/index.css">
 </head>
 <body>
+    <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
     <div class="theme-switch">
         <input type="checkbox" class="checkbox" id="checkbox" />
         <label for="checkbox" class="label">
@@ -30,7 +35,7 @@
                 <input type="text" placeholder="Tempat Lahir ">
             </div>
             <div class="titlecontent">
-                <p for="Selesai">Tanggal Selesai</p>
+                <p for="lahir">Tanggal Lahir</p>
             </div>
             <div class="content">
                 <input type="date" placeholder="Tanggal Lahir ">
@@ -137,18 +142,15 @@
             <p class="d"> Informasi terkait Sekolah asal siswa Prakerin</p>
         </div>
 
-        <div class="content">
-            <input type="text" value="" placeholder="Nama Sekolah" required>
-        </div>
-
-        <div class="content">
-            <input type="text" value="" placeholder="Alamat Sekolah" required>
-        </div>
-
-        <div class="content">
-            <input type="text" value="" placeholder="Nama Kepala Sekolah" required>
-        </div>
-
+                <form action="#">
+                    <select name="languages" id="lang">
+                    <option value="select">Asal Sekolah</option>
+                    <option value="SMK 4 Malang">SMK 4 Malang</option>
+                    <option value="SMK 8 Malang">SMK 8 Malang</option>
+                    <option value="SMK PGRI Malang">SMK PGRI Malang</option>
+                    <option value="SMK 4 Bojonegoro">SMK 4 Bojonegoro</option>
+                    </select>
+                </form>
         </div>
 
         <div class="title">

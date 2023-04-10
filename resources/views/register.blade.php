@@ -36,7 +36,11 @@
                             placeholder="Password">
                         <label for="password">Password</label>
                     </div>
- 
+                        {{ csrf_field() }}
+                        <div class="imagesup">
+                            <label class="labelenam">Foto (Formal dan Close Up)</label><br><br>
+                            <input type="file" id="file" style="margin-bottom: 20px;">
+                        </div>
                     <button class="w-100 btn btn-lg btn-danger mt-3" type="submit">Register</button>
                 </form>
                 <small class="d-block mt-3">Have an account? <a class="text-danger" href="/login"> Login
