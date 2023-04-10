@@ -19,10 +19,23 @@ class RegisterController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|unique:users',
             'password' => 'required',
+            'images' => 'required|file|image|mimes:jpeg,png,jpg|max:1',
         ]);
  
+
+
+        $images = $request->images('images');
+        // menyimpan data file yang diupload ke variabel $file
+        $images = $request->file('file');
+        
+        $nama_file = time()."_".$images->getClientOriginalName();
+
+            // isi dengan nama folder tempat kemana file diupload
+        $tujuan_upload = 'data_file';
+        $images->move($tujuan_upload,$nama_file);
+
         $validatedData['password'] = Hash::make($validatedData['password']);
- 
+
         User::create($validatedData);
         return redirect('login')->with('success', 'Registration Succesfull! Please Login');
     }
