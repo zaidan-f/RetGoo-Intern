@@ -249,3 +249,63 @@ footer{
     text-align: center;
     color:#ffffff;
 }
+
+
+@media screen and (max-width: 414px) {
+    nav {
+        display: flex;
+        width: 414px;
+        
+    }
+
+    .hero {
+        height: 100%;
+        width: 80%;
+        font-size: -1rem;
+    }
+
+    .intro-text h1 {
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 0rem;
+        margin-right: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    .imgrtg {
+        width: 40%;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    
+    .clap {
+        width: 20%;
+        display: flex;
+        position: absolute;
+        margin-left: -10%;
+        margin-top: -50px;
+    }
+    
+    .jempol {
+        width: 20%;
+        display: flex;
+        position: absolute;
+        margin-left: 65%;
+        margin-top: -55px;
+    }
+
+    footer{
+        margin-top: 100%;
+        display: flex;
+        width: 414px;
+        text-align: center;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .red {
+        margin-top: 10px;
+    }
+}
