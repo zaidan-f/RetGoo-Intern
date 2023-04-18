@@ -28,10 +28,6 @@ body {
   font-family: "Roboto", sans-serf;
 }
 
-ul li {
-  list-style-type: none;
-}
-
 a {
     font-size: 1rem;  
     text-decoration: none;
@@ -73,7 +69,7 @@ nav {
     text-align: right;
     font-size: larger;
     font-style: bold;
-    margin-left: -18%;
+    margin-left: -22%;
     color: white;
     margin-top: -1%;
     width: 250px;
