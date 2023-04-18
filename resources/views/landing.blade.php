@@ -19,21 +19,27 @@
   <body>
     <!-- Navbar -->
     <nav>
-        <span><img src="logo.png" alt="" width="20%"></span>
-        <a href="#" class="logo">
-          <h3>
-            RetGoo <br> Internship System
-          </h3>
-        </a>
-        <div class="theme-switch">
-            <input type="checkbox" class="checkbox" id="checkbox" />
-            <label for="checkbox" class="label">
-               <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
-               <ion-icon name="moon-outline" class="moon"></ion-icon>
-               <div class="switcher"></div>
-            </label>
-        </div>
-    </nav>
+      <span><img class="logo" src="logo.png" alt="" width="20%"></span>
+      <a href="/" class="logo">
+        <h3>
+          RetGoo <br> Internship System
+        </h3>
+      </a>
+      <div class="theme-switch">
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <label for="checkbox" class="label">
+             <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+             <ion-icon name="moon-outline" class="moon"></ion-icon>
+             <div class="switcher"></div>
+          </label>
+      </div>
+      <img class="navimg" src="/avatars/{{ Auth::user()->avatar }}">
+      <a href="/account">
+        <div class="nama">
+        <p>{{ auth()->user()->name ?? '' }}</p>
+      </div>
+    </a>
+  </nav>
     
     <!-- Hero section -->
     <section class="hero">

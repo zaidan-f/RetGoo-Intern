@@ -25,6 +25,7 @@
                             value="{{ old('email') }}" placeholder="Bambang@contoh.com">
                         <label for="email">Email address</label>
                     </div>
+                    <br>
                     <div class="form-floating">
                         <input type="password" class="form-control rounded-bottom" name="password" id="password" required
                             placeholder="Password">

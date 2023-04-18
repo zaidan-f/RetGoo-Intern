@@ -25,22 +25,18 @@
                             value="{{ old('name') }}" placeholder="Name">
                         <label for="name">Name</label>
                     </div>
+                    <br>
                     <div class="form-floating">
                         <input type="email" class="form-control " name="email" id="email" required
                             value="{{ old('email') }}" placeholder="name@example.com">
                         <label for="email">Email address</label>
                     </div>
-
+                    <br>
                     <div class="form-floating">
                         <input type="password" class="form-control rounded-bottom" name="password" id="password" required
                             placeholder="Password">
                         <label for="password">Password</label>
                     </div>
-                        {{ csrf_field() }}
-                        <div class="imagesup">
-                            <label class="labelenam">Foto (Formal dan Close Up)</label><br><br>
-                            <input type="file" id="file" style="margin-bottom: 20px;">
-                        </div>
                     <button class="w-100 btn btn-lg btn-danger mt-3" type="submit">Register</button>
                 </form>
                 <small class="d-block mt-3">Have an account? <a class="text-danger" href="/login"> Login

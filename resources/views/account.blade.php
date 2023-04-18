@@ -4,12 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Account Page Intership Sysytem</title>
-        <link rel="stylesheet" type="text/css" href="/css/account.css">
-    
-    
-        <link rel="stylesheet" href="/css/account.css" />
-    
+        <title>{{ auth()->user()->name ?? '' }}</title>
+        <link rel="stylesheet" type="text/css" href="/css/account.css">    
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -20,7 +16,7 @@
 <body>
     <nav>
         <span><img class="logo" src="logo.png" alt="" width="20%"></span>
-        <a href="#" class="logo">
+        <a href="/" class="logo">
           <h3>
             RetGoo <br> Internship System
           </h3>
@@ -33,18 +29,24 @@
                <div class="switcher"></div>
             </label>
         </div>
+        <img class="navimg" src="/avatars/{{ Auth::user()->avatar }}">
+        <a href="/account">
+          <div class="nama">
+          <p>{{ auth()->user()->name ?? '' }}</p>
+        </div>
+      </a>
     </nav>
 
     <section class="banner">
     </section>
 
     <section class="profile">
-    <img class="accimg" src="https://i.postimg.cc/sxtfMBWh/pdipred.png" alt="">
-    <div class="namaprodil">
+      <img class="accimg" src="/avatars/{{ auth::user()->avatar }}" alt="">
+    <div class="namaprofil">
       <h1>
-        <span class="nama">{{ auth()->user()->name ?? '' }}</span>
+        <span class="name">{{ auth()->user()->name ?? '' }}</span>
       </h1>
-      <Button class="btn edit" formaction="" >Edit Profil<ion-icon name="pencil-sharp" class="pencil"></ion-icon></Button>
+      <a href="/profile"><Button class="btn" formaction="/profile">Edit Profil<ion-icon name="pencil-sharp" class="pencil"></ion-icon></Button></a>
     </div>
     </section>
 
@@ -58,8 +60,6 @@
       <p><ion-icon name="call" class="icondt"></ion-icon>{{ auth()->user()->telpon ?? '' }}</p><br>
     </div>
     </section>
-
-
 
       <footer id="footer">
           <div class="container py-4">

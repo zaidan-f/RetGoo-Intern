@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Form Internship-System</title>
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/css/form.css">
 </head>
 <body>
     <div class="header">
         <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
+          <div class="progress-bar" id="myBar"><ion-icon name="arrow-forward-circle-outline" class="arrow"></ion-icon></div>
         </div>
     </div>
+    
     <div class="theme-switch">
         <input type="checkbox" class="checkbox" id="checkbox" />
         <label for="checkbox" class="label">
@@ -21,6 +22,7 @@
            <div class="switcher"></div>
         </label>
     </div>
+
     <div class="form">
         <div class="form-content">
             <h1>Data Peserta Prakerin RetGoo</h1>
