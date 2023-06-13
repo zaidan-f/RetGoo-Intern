@@ -11,6 +11,7 @@ use App\Http\Controllers\AccountController;
 use App\Http\Controllers\testcontroller;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\JawabanController;
 
 
 // register
@@ -51,3 +52,9 @@ Route::post('image-upload', [ ImageController::class, 'store' ])->name('image.st
 // profile pic
 Route::get('/profile', [ProfileController::class, 'index'])->name('user.profile');
 Route::post('/profile', [ProfileController::class, 'store'])->name('user.profile.store');
+Route::delete('/profile/avatar', [ProfileController::class, 'destroy'])->name('user.profile.destroy');
+Route::delete('/profile/banner', [ProfileController::class, 'destroybanner'])->name('user.profile.destroy.banner');
+
+
+// jawaban
+Route::get('/formlihat', [ JawabanController::class, 'index' ]);
