@@ -15,7 +15,7 @@ a {
     font-size: 1rem;  
     text-decoration: none;
     color:white;
-    margin-left: -55%;
+    margin-left: -54%;
     margin-top: 0%;
 }
   
@@ -44,15 +44,16 @@ nav {
     height: 50px;
     border-radius: 50%;
     border: solid 1px black;
-    margin-right: 16%;
+    margin-right: 22%;
 }
 
 .nama {
+    align-items: right;
     position: absolute;
     text-align: right;
     font-size: larger;
     font-style: bold;
-    margin-left: -22%;
+    margin-left: -27%;
     color: white;
     margin-top: -1%;
     width: 250px;
@@ -60,6 +61,15 @@ nav {
 
 .nama:hover{
     color: #000000;
+}
+
+.line {
+    width: 2px;
+    height: 60px;
+    position: absolute;
+    background: #000;
+    margin-left: 93.2%;
+    
 }
 
 .checkbox {
@@ -81,7 +91,7 @@ nav {
     border-radius: 30px;
     padding: 6px;
     position: relative;
-    margin-left: 450%;
+    margin-left: 1160%;
 }
 
 .switcher {
@@ -100,38 +110,37 @@ nav {
   
 .sun {
     color: #ffffff;
-}
+} 
 
 
-.banner {
-    background:url(https://i.postimg.cc/WzFQKXHB/Background.png) ; 
+.accbanner {
+    background-image: url('/banners/{{ auth()->user()->banner }}');
     background-size: cover;
     background-position: center;
-    padding-top: 30px;
     border-radius: 20px;
     width: 800px;
-    height: 300px;
-    margin-top: 10px;
+    height: 350px;
     margin-left: 20%;
+    margin-top: 1%;
 }
 
 .profile{
     position: absolute;
     margin-left: 24%;
-    margin-top: -8%;
+    margin-top: -10%;
     font-size: 2em;
     text-align: center;
 }
 
 .accimg {
     border-radius: 50%;
-    border: 5px solid rgb(0, 0, 0);
+    border: 5px solid rgb(255, 255, 255);
     width: 200px;
     height: 200px;
 }
 
 .btn {
-    margin-top: 5px;
+    margin-top: 3%;
     margin-left: 55%;
     width: 700px;
     padding: 15px 25px;
@@ -166,7 +175,7 @@ nav {
     background-attachment: fixed;
     width: 800px;
     height: 400px;
-    margin-top: 17%;
+    margin-top: 18%;
     margin-left: 20%;
     border-radius: 2%;
     font-family: "Roboto", sans-serf;
@@ -185,6 +194,35 @@ nav {
 
 .icondt {
     padding-right: 10px;
+}
+
+.logout {
+    position: absolute;
+    margin-top: -2%;
+    margin-left: 48%;
+    width: 100px;
+    padding: 5px 5px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background:white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 5px #ff0000ab;
+}
+
+.logout:hover {
+    background-color: #ff0000ab;
+    color: #dddddd;
+}
+
+.logout:active {
+    background-color: #8a3900;
+    box-shadow: 0 2px #ff0000ab;
+    transform: translateY(3px);
+    transition: 0.2ms;
 }
 
 body.dark {
@@ -218,6 +256,21 @@ body.dark {
     background: url(https://i.postimg.cc/BnWMczYG/bg1anjay.png);
     background-size: cover;
     border: 1px solid red;
+}
+
+.dark .logout {
+    color: rgb(255, 255, 255);
+    background:rgb(0, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.dark .logout:hover {
+    background-color: #ff0000ab;
+    color: #000000;
+}
+
+.dark .accimg{
+    border: 5px solid rgb(0, 0, 0);
 }
 
 footer{
@@ -312,8 +365,6 @@ footer{
     
     
     .banner {
-        background:url(https://i.postimg.cc/WzFQKXHB/Background.png); 
-        background-repeat: no-repeat;
         background-size: 100%;
         padding-top: 3px;
         border-radius: 20px;

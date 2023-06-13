@@ -18,7 +18,7 @@ body {
 .card-header {
     font-size: 2rem;
     margin: 10px;
-    margin-top: 10%;
+    margin-top: 1%;
     text-align: center;
 }
 
@@ -73,6 +73,35 @@ input[type='file']::-webkit-file-upload-button:hover {
     transition: .3s;
 }
 
+.btn-up:hover {
+    background-color: #fff;
+    border: 1px solid #ea7622;
+    color: #ea7622;
+}
+
+.delete {
+    text-align: center;
+}
+
+.btndel {
+    align-items: center;
+    padding: 10px;
+    border: 2px solid white  ;
+    background-color: #ea5c27;
+    width: 20%;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btndel:hover {
+    background-color: #fff;
+    border: 1px solid #ea7622;
+    color: #ea7622;
+}
+
 .next {
     text-align: center;
 }
@@ -88,4 +117,11 @@ input[type='file']::-webkit-file-upload-button:hover {
     margin-top: 1em;
     cursor: pointer;
     transition: .3s;
+    margin-bottom: 1%;
+}
+
+.btnnext:hover {
+    background-color: #fff;
+    border: 1px solid #ea7622;
+    color: #ea7622;
 }

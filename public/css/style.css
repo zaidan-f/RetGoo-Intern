@@ -32,7 +32,7 @@ a {
     font-size: 1rem;  
     text-decoration: none;
     color:white;
-    margin-left: -55%;
+    margin-left: -54%;
     margin-top: 0%;
 }
   
@@ -61,15 +61,16 @@ nav {
     height: 50px;
     border-radius: 50%;
     border: solid 1px black;
-    margin-right: 16%;
+    margin-right: 22%;
 }
 
 .nama {
+    align-items: right;
     position: absolute;
     text-align: right;
     font-size: larger;
     font-style: bold;
-    margin-left: -22%;
+    margin-left: -27%;
     color: white;
     margin-top: -1%;
     width: 250px;
@@ -77,6 +78,15 @@ nav {
 
 .nama:hover{
     color: #000000;
+}
+
+.line {
+    width: 2px;
+    height: 60px;
+    position: absolute;
+    background: #000;
+    margin-left: 93.2%;
+    
 }
 
 .checkbox {
@@ -98,7 +108,7 @@ nav {
     border-radius: 30px;
     padding: 6px;
     position: relative;
-    margin-left: 450%;
+    margin-left: 1160%;
 }
 
 .switcher {
@@ -119,7 +129,6 @@ nav {
     color: #ffffff;
 }
 
-
 .hero {
   background:url(https://i.postimg.cc/k4bQN2Zd/bgdesign.png) ; 
   background-size: cover;
@@ -129,7 +138,7 @@ nav {
   border-radius: 20px;
   height: 480px;
   margin-top: 3rem ;
-  margin-left: 3rem;
+  margin-left: 4rem;
   margin-right: 5rem;
   margin-bottom: 3rem;
 }
@@ -192,7 +201,7 @@ nav {
   
 .red {
     background-color:white;
-    margin-right: 1.5rem;
+    margin-left: 45rem;
     border: 1px solid black;
 }
   
@@ -201,6 +210,24 @@ nav {
     color: #fff;
 }
 
+.btnjawa {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 0.6rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-family: "Roboto", sans-serf;
+    border: 1px solid black;
+    width: 180px;
+    margin-left: 50%;
+}
+
+.btnjawa:hover {
+    background-color: #5e1518;
+    color: #fff;
+}
 
 body.dark {
     background-color: #161616;
@@ -234,6 +261,12 @@ body.dark .red:hover{
 body.dark .btn{
     color: white;
     border: 1px solid white;
+}
+
+body.dark .btnjawa{
+    color: white;
+    border: 1px solid white;
+    background-color: #000;
 }
   
 body.dark p {

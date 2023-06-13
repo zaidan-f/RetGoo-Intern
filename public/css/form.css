@@ -433,116 +433,64 @@ body.dark .pilihan {
   }
 
 .dark .title h3 {
-    font-size: 1.4em;
     color: #ffffff;
     position: relative;
   
 }
 .dark .title h3::before{
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    left: 0;
-    bottom: -8px;
     background: #ff0000;
 } 
 .dark .title .d{
-    font-size: 14px;
     text-align: left;
 }
 .dark .title p {
     color: rgb(255, 255, 255);
-    font-size: 13px;
     text-align: left;
 }
 .dark .tulis p {
     color: rgb(255, 255, 255), 0, 0;
 }
 .dark .tulis .d{
-    font-size: 14px;
     color: rgb(255, 255, 255);
     text-align: left;
 }
 .dark .title label {
-    font-size:1.1em;
-    font-weight: 400;
     color: #ffffff;
    position: relative;
 }
 .dark .tulis label {
-    font-size:1.1em;
-    font-weight: 400;
     color: #ffffff;
    position: relative;
 }
 .dark .title label::before{
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 45px;
-    left: 0;
-    bottom: -5px;
-    background: #256d85;
+    background: #ff0000;
 }
 .dark .content {
     color: #ffffff;
-    margin-bottom: 10px;
 }
 
 .dark .content input[type=text] {
-    background: transparent;
-    width: 100%;
-    border: none;
-    height: 40px;
     border-bottom: 0.5px solid #ffffff;
-    font-size: 14px;
     color: rgb(255, 255, 255);
-    margin-bottom: 6px;
-    outline: none;
-    opacity: 90%;
 }
 
 .dark .content input[type=date] {
-    background: transparent;
-    width: 100%;
-    border: none;
-    height: 40px;
     border-bottom: 1px solid #bfbfbf;
     color: rgb(255, 255, 255);
-    margin-bottom: 10px;
-    margin-top: -9px;
-    outline: none;
-    opacity: 80%;
 }
 
 .dark .content label {
     color: white;
-    font-size: 1em;
-    font-weight: 400;
     position: relative;
 }
 .dark .content label::before{
-    content: "";
-    position: absolute;
-    height: 2px;
-    width:60px;
-    left: 0;
-    bottom: -5px;
-    background: #256d85;
+    background: #ff0000;
 }
 
 .dark .btnkirim {
     border: 2px solid #ea5c27 ;
     background-color: #000000;
-    float: right;
-    width: 20%;
     color: rgb(255, 255, 255);
-    height: 50px;
-    margin-top: 3em;
-    cursor: pointer;
-    transition: .3s;
-    margin-bottom: 50px;
 }
 .dark .btnkirim:hover {
     background: #ea7622;
@@ -558,7 +506,6 @@ body.dark .pilihan {
 .dark input[type='file']::-webkit-file-upload-button {
     background: transparent;
     border: 1px solid #ea7622;
-    padding: 1em 2em;
     cursor: pointer;
     color: rgb(255, 255, 255);
     transition: .3s;
@@ -568,7 +515,6 @@ body.dark .pilihan {
 .dark input[type='file']::-webkit-file-upload-button:hover {
     background: #ea5c27;
     border: 1px solid #ffffff;
-    padding: 1em 2em;
     cursor: pointer;
     color: rgb(0, 0, 0);
 }
@@ -576,8 +522,6 @@ body.dark .pilihan {
 .dark .display {
     color: white;
 	display: flex;
-    font-size: 14px;
-    margin-bottom: 6px;
 }
 
 .dark .cbp {
@@ -612,11 +556,11 @@ body.dark .pilihan {
  }
 
  .dark .jurusan label::before {
-    background-color: #256d85;
+    background-color: #ff0000;
  }
 
  body.dark .kelamin label::before {
-    background-color: #256d85;
+    background-color: #ff0000;
  }
 
  .dark .content input [type = "radio"] {
